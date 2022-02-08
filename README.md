@@ -37,9 +37,9 @@ var newTweet = new tweet('Add token here');
 ### Methods Available
 
 ##### tweet#getUserByName(name)
-##### axios#getUserById(id)
-##### axios#getUserTweetsByName(name)
-##### axios#getUserFollowersByName(name)
-##### axios#getUserBlockedByName(name)
+##### tweet#getUserById(id)
+##### tweet#getUserTweetsByName(name)
+##### tweet#getUserFollowersByName(name)
+##### tweet#getUserBlockedByName(name)
 
 
