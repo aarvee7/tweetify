@@ -10,9 +10,11 @@ axios.defaults.baseURL = config.base;
 class main{
     constructor(key){
 this.key = key;
+axios.defaults.headers = {Authorization : 'Bearer '+ key}
     }
  
 async getUserByName(name){
+
     return await axios.get("/users/by/username/"+name);
 
     }
