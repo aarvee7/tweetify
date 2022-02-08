@@ -2,8 +2,8 @@
 const config = require('./config/config.json')
 var axios = require('axios').default;
 
-var token;
-axios.defaults.headers = {Authorization : 'Bearer '+ token}
+//var token;
+//axios.defaults.headers = {Authorization : 'Bearer '+ token}
 axios.defaults.baseURL = config.base;
 
 //console.log(axios);
@@ -49,10 +49,9 @@ async getUserByName(name){
 
 }
 
-module.exports = {token : token,load : main};
+module.exports = main;
 
-// const newa = new main();
-// newa.createTweet('hellow').then(res => console.log(res.data))
+
 
 
 
